@@ -16,7 +16,6 @@
     $statement = $pdo->prepare($sql);//prepare for user input
 
     if (isset($_GET['genre'])) {
-        var_dump($_GET['genre']);
         $statement->bindParam(1, $_GET['genre']);//this will only execute if there is a search parameter.
         //could bind other parameters here if we wanted to
     }
